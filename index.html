@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <header>
+        <div class="ceparacao">
+            <img src="img/images-removebg-preview.png">
+        </div>
+        <div class="pesquisador">
+            <input id="codigoPokemon" type="text" placeholder="Pesquise o Pokemon" >
+            <button class="bto" id="bto" onclick="loadPokemon()"> Procurar</button>
+        </div>
+        
+        <div class="ceparacao">
+            <img src="img/images-removebg-preview.png">
+        </div>
+    </header>
+    <br>
+    <div class="pokedex">
+        <div class="conteiner-pokedex" id="painel">
+            
+            <div class="box-pokedex">
+                <div class="cima">
+                    <div class="id">
+                        <h5>ID</h5>
+                        <h5 id="id"></h5>
+                    </div>
+                    <div class="nome">
+                        <h5 >name</h5>
+                        <h5 id="nome"></h5>
+                    </div>
+                    <div class="type">
+                        <h5>type</h5>
+                        <h5 id="type"></h5>
+                    </div>
+
+                </div>
+                <div class="poke_img">
+                    <div>
+                        <img id="poke_img" src="" > 
+                    </div>
+                    
+                </div>
+
+                <div class="stats">
+                    <div class="HP">
+                        <h6> HP</h6>
+                        <h6 id="HP"> </h6>
+                    </div>
+                    <div class="Atack">
+                        <h6 > Atk</h6>
+                        <h6 id="Atack"> </h6>
+                    </div>
+                    <div class="Defense">
+                        <h6> Def</h6>
+                        <h6 id="Defense"> </h6>
+                    </div>
+                    <div class="Speed">
+                        <h6> Speed</Sp>
+                        <h6 id="Speed"> </h6>
+                    </div>
+                    <div class="SpecialAtack">
+                        <h6> Sp.Atk</h6>
+                        <h6 id="SpecialAtack"> </h6>
+                    </div>
+                    <div class="SpecialDefense">
+                        <h6> Sp.Def</h6>
+                        <h6 id="SpecialDefense"> </h6>
+                    </div>
+                    
+                </div>
+            </div>
+<div class="gameboy">
+    <img src="img/Captura de tela 2024-11-19 163025.png" alt="Gameboy">
+    <!-- <div class="botoes">
+        <button class="inv_bto" id="next" onclick="nextPokemon()">Próximo</button>
+        <button class="inv_bto" id="before" onclick="previousPokemon()">Anterior</button>
+    </div> -->
+</div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+<script src='script.js'></script>
+</body>
+</html>

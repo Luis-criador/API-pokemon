@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+body {
+    background-color: powderblue;
+}
+
+header {
+    width: 100%;
+    background-color: aquamarine;
+    color: white;
+    padding: 1.1rem;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50%;
+    border: solid 2px #191970;
+}
+
+.ceparacao {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.pesquisador {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+input {
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    flex-direction: column;
+    font-family: "Pixelify Sans";
+}
+
+.pokedex {
+    width: 100vw;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-pokedex {
+    padding-top: 30px;
+    align-content: center;
+    width: 500px;
+    height: 800px;
+    background-color: #d6d6d6 ;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+}
+.conteiner-pokedex img {
+    display: block;
+    align-items: baseline;
+
+}
+
+/* .gameboy{
+    width: 100%;
+}
+.gameboy img{
+    width: 100%;
+    border-radius: 5%;
+
+} */
+.box-pokedex {
+    
+    width: 400px;
+    height: 400px;
+    background-color: #9c9f4c ;
+    border: solid 20px #928e93
+}
+
+.box-pokedex img{
+
+}
+.cima{
+    width: 100%;
+    height: 20%;
+    background-color: #878a45;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.poke_img {
+    width: 100%;
+    height: 60%;
+    background-color: #9c9f4c;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+
+}
+.poke_img img {
+    height: 300px;
+}
+.id{
+    height: 20%;
+}
+.type{
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;  /* Adiciona "..." quando o texto ultrapassa o limite */
+    white-space: nowrap; /* Impede o texto de quebrar linha */
+}
+
+
+
+
+
+.nome{
+    height: 60%;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+}
+
+.stats{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #878a45;
+    height: 20%;
+}
+.HP, .Atack, .Defense, .Special,.SpecialAtack.SpecialDefense{
+    height: 16,67%
+}
+.bto {
+    display: inline-block;
+    padding: 0.7rem 1.8rem;
+    background-color: #3232dd;
+    border-radius: 2rem;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    margin-top: 1.2rem;
+}
+.gameboy {
+    position: relative; /* Permite o posicionamento absoluto dos botões dentro desta div */
+    width: 100%;
+}
+
+.gameboy img {
+    width: 100%; /* Mantém a imagem no tamanho total do contêiner */
+    border-radius: 5%;
+}
+
+.botoes {
+    position: absolute; /* Posiciona os botões sobre a imagem */
+    top: 50%; /* Ajusta a posição para o centro vertical da imagem */
+    left: 50%; /* Ajusta a posição para o centro horizontal da imagem */
+    transform: translate(-50%, -50%); /* Centraliza os botões em relação ao centro da imagem */
+    display: flex;
+    justify-content: space-between; /* Espaço entre os botões */
+    width: 80%; /* Ajusta a largura dos botões */
+}
+
+.inv_bto {
+    
+
+    background-color: rgb(255, 255, 255); /* Cor de fundo semitransparente */
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Para alinhamento mais preciso do botão */
+#next {
+    position: relative;
+    right: 18px; /* Ajusta o botão "Próximo" ligeiramente para a direita */
+}
+
+#before {
+    position: relative;
+    left: -290px; /* Ajusta o botão "Anterior" ligeiramente para a esquerda */
+}
